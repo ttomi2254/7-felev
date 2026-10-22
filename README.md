@@ -8,8 +8,8 @@ A personal study portal I built for my 7th university semester. It brings all my
 
 ## Features
 
-- **Course pages** with requirements, grading rules, a list of course files and upcoming assessments for 8 courses.
-- **Lessons with exercises.** 55 lessons written in Markdown. Many exercises can be checked automatically: you type your answer and get instant feedback. There are three ways of checking: normalized text, whitespace-insensitive code and numbers with a small tolerance. Exercises also have optional hints and solutions, and Agda exercises have a Unicode symbol palette.
+- **Course pages** with requirements, grading rules, a list of course files and upcoming assessments for 9 courses.
+- **Lessons with exercises.** 58 lessons written in Markdown. Many exercises can be checked automatically: you type your answer and get instant feedback. There are three ways of checking: normalized text, whitespace-insensitive code and numbers with a small tolerance. Exercises also have optional hints and solutions, and Agda exercises have a Unicode symbol palette.
 - **Dashboard** with a live countdown to the next class and a list of upcoming exams with days remaining. You can turn on browser notifications for them.
 - **Weekly timetable** shown as a grid.
 - **Calendar feed** (`/naptar.ics`). It follows the iCalendar standard (RFC 5545): classes repeat weekly until the end of the semester, exams have reminders the day before and an hour before, and the time zone is Europe/Budapest. It works with Google and Apple Calendar, either imported or subscribed to by URL.
@@ -18,7 +18,7 @@ A personal study portal I built for my 7th university semester. It brings all my
 
 | | |
 |---|---|
-| Framework | Next.js 15 (App Router) + React 19, fully statically generated (70 pages) |
+| Framework | Next.js 15 (App Router) + React 19, fully statically generated (74 pages) |
 | Language | TypeScript (strict) |
 | Styling | Tailwind CSS |
 | Content | Typed data modules (`data/subjects/*.ts`) with Markdown rendered by `react-markdown` + `remark-gfm` |
@@ -81,4 +81,4 @@ npm run build
 
 ## Note on content
 
-The original course materials (slides, PDFs, lab files) belong to the university and the instructors, so they aren't in this repository. Instructor contact details are left out of the public version, and so is the content of some courses.
+The original course materials (slides, PDFs, lab files) belong to the university and the instructors, so they aren't in this repository. Instructor contact details, real exam papers and their solutions are left out of the public version. The worked examples are my own problems.

@@ -2,6 +2,7 @@ import type { Subject, CourseEvent } from "@/lib/types";
 import { adatbazisok2 } from "./adatbazisok-2";
 import { diszkretModellek } from "./diszkret-modellek";
 import { funkcionalisProgramozas } from "./funkcionalis-programozas";
+import { konkurensProgramozas } from "./konkurens-programozas";
 import { programozasiTechnologia } from "./programozasi-technologia";
 import { python } from "./python";
 import { szamitaselmelet2 } from "./szamitaselmelet-2";
@@ -15,6 +16,7 @@ export const subjects: Subject[] = [
   adatbazisok2,
   tipuselmelet,
   szamitaselmelet2,
+  konkurensProgramozas,
   programozasiTechnologia,
   diszkretModellek,
 ];

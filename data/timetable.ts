@@ -9,6 +9,7 @@ export const timetable: ClassSlot[] = [
   { day: 1, start: "12:00", end: "14:00", subjectSlug: "adatbazisok-2", kind: "labor", label: "Adatbázisok II. — Labor" },
   { day: 1, start: "12:00", end: "14:00", subjectSlug: "funkcionalis-programozas", kind: "ea", label: "Funkcionális programozás — Előadás" },
   { day: 1, start: "14:00", end: "16:00", subjectSlug: "funkcionalis-programozas", kind: "labor", label: "Funkcionális programozás — Labor" },
+  { day: 1, start: "16:00", end: "16:45", subjectSlug: "konkurens-programozas", kind: "ea+gy", label: "Konkurens programozás — Ea+Gy" },
 
   // Kedd
   { day: 2, start: "10:00", end: "12:00", subjectSlug: "tipuselmelet", kind: "gy", label: "Típuselmélet — Gyakorlat" },
@@ -28,6 +29,7 @@ export const timetable: ClassSlot[] = [
   { day: 5, start: "12:00", end: "14:00", subjectSlug: "python", kind: "labor", label: "Python — Labor" },
   { day: 5, start: "14:00", end: "16:00", subjectSlug: "tipuselmelet", kind: "ea", label: "Típuselmélet — Előadás" },
   { day: 5, start: "14:00", end: "16:00", subjectSlug: "webprogramozas", kind: "labor", label: "Webprogramozás — Labor" },
+  { day: 5, start: "16:00", end: "16:45", subjectSlug: "konkurens-programozas", kind: "labor", label: "Konkurens programozás — Labor" },
 ];
 
 export const dayNames = ["", "Hétfő", "Kedd", "Szerda", "Csütörtök", "Péntek"];
