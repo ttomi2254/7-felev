@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-mono: "Cascadia Code", "Consolas", ui-monospace, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(1100px 620px at 50% -18%, rgba(99, 102, 241, 0.09), transparent),
+    #0b0e1a;
+  color: #e7e9f3;
+  min-height: 100vh;
+}
+
+/* Markdown (prose) alap stílus */
+.prose-hu {
+  line-height: 1.7;
+  color: #d7dbec;
+}
+.prose-hu h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 1.6rem 0 0.7rem;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 0.3rem;
+}
+.prose-hu h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 1.2rem 0 0.5rem;
+  color: #f3f4ff;
+}
+.prose-hu p { margin: 0.6rem 0; }
+.prose-hu ul, .prose-hu ol { margin: 0.6rem 0 0.6rem 1.3rem; }
+.prose-hu ul { list-style: disc; }
+.prose-hu ol { list-style: decimal; }
+.prose-hu li { margin: 0.25rem 0; }
+.prose-hu a { color: #93c5fd; text-decoration: underline; }
+.prose-hu strong { color: #fff; }
+.prose-hu blockquote {
+  border-left: 3px solid rgba(147, 197, 253, 0.5);
+  padding: 0.3rem 0 0.3rem 1rem;
+  margin: 0.9rem 0;
+  color: #aab0cc;
+  background: rgba(147, 197, 253, 0.06);
+  border-radius: 0 6px 6px 0;
+}
+.prose-hu code {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  background: rgba(255, 255, 255, 0.09);
+  padding: 0.12em 0.4em;
+  border-radius: 5px;
+  color: #ffd9a8;
+}
+.prose-hu pre {
+  background: #0a0d18;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 1rem;
+  overflow-x: auto;
+  margin: 0.9rem 0;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+.prose-hu pre code {
+  background: none;
+  padding: 0;
+  color: #e6e9f5;
+  font-size: 0.85rem;
+}
+.prose-hu table {
+  border-collapse: collapse;
+  margin: 0.9rem 0;
+  width: 100%;
+  font-size: 0.9rem;
+  display: block;
+  overflow-x: auto;
+}
+.prose-hu th, .prose-hu td {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 0.4rem 0.7rem;
+  text-align: left;
+}
+.prose-hu th { background: rgba(255, 255, 255, 0.06); color: #fff; }
+.prose-hu img { display: block; max-width: 100%; height: auto; margin: 0.9rem 0; border-radius: 14px; }
+.prose-hu td code, .prose-hu th code { white-space: nowrap; }
+
+::selection { background: rgba(147, 197, 253, 0.35); }
+
+/* Feladat-szöveg: Markdown a kártyában, tömörebb margókkal */
+.exercise-prompt .prose-hu > :first-child { margin-top: 0; }
+.exercise-prompt .prose-hu > :last-child { margin-bottom: 0; }
+.exercise-prompt .prose-hu pre { margin: 0.5rem 0; }

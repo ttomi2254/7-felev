@@ -1,0 +1,40 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# next.js
+/.next/
+/out/
+next-env.d.ts
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+.vercel
+*.tsbuildinfo
+
+# large media
+*.mp4
+
+# original source folders (copies live in public/materials)
+/Adatb2/
+/Dimod/
+/Funkcprog/
+/Konkurens/
+/Progtech/
+/Python/
+/Szamelmelet/
+/Tipuselmelet/
+/Webprog/
+/orarend.jpg
+
+# tooling artifacts
+/.playwright-mcp/
+/scripts/__pycache__/
+
+# course materials (PDF-ek, forrásfájlok) — csak lokálisan, nem a repóban
+/public/materials/
